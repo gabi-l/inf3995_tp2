@@ -1,0 +1,68 @@
+11:41:05 **** Auto Build of configuration Debug for project sw_tp2 ****
+make all 
+Building file: ../src/cf_hdmi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\inc" -c -fmessage-length=0 -MT"src/cf_hdmi.o" -I../../bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cf_hdmi.d" -MT"src/cf_hdmi.d" -o "src/cf_hdmi.o" "../src/cf_hdmi.c"
+cygwin warning:
+  MS-DOS style path detected: C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\Debug
+  Preferred POSIX equivalent is: /cygdrive/c/temp/tp2Code/adv7511_zed.sdk/sw_tp2/Debug
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+Finished building: ../src/cf_hdmi.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\inc" -c -fmessage-length=0 -MT"src/main.o" -I../../bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+cygwin warning:
+  MS-DOS style path detected: C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\Debug
+  Preferred POSIX equivalent is: /cygdrive/c/temp/tp2Code/adv7511_zed.sdk/sw_tp2/Debug
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+In file included from ../src/main.c:46:0:
+../../bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/transmitter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\inc" -c -fmessage-length=0 -MT"src/transmitter.o" -I../../bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/transmitter.d" -MT"src/transmitter.d" -o "src/transmitter.o" "../src/transmitter.c"
+cygwin warning:
+  MS-DOS style path detected: C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\Debug
+  Preferred POSIX equivalent is: /cygdrive/c/temp/tp2Code/adv7511_zed.sdk/sw_tp2/Debug
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+Finished building: ../src/transmitter.c
+ 
+Building target: sw_tp2.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\lib" -Wl,-T -Wl,../src/lscript.ld -L../../bsp/ps7_cortexa9_0/lib -o "sw_tp2.elf"  ./src/cf_hdmi.o ./src/main.o ./src/transmitter.o   -lHDMI_ZedBoardLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+cygwin warning:
+  MS-DOS style path detected: C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\Debug
+  Preferred POSIX equivalent is: /cygdrive/c/temp/tp2Code/adv7511_zed.sdk/sw_tp2/Debug
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+Finished building target: sw_tp2.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size sw_tp2.elf  |tee "sw_tp2.elf.size"
+cygwin warning:
+  MS-DOS style path detected: C:\temp\tp2Code\adv7511_zed.sdk\sw_tp2\Debug
+  Preferred POSIX equivalent is: /cygdrive/c/temp/tp2Code/adv7511_zed.sdk/sw_tp2/Debug
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+   text	   data	    bss	    dec	    hex	filename
+ 102665	 704576	  23452	 830693	  cace5	sw_tp2.elf
+Finished building: sw_tp2.elf.size
+ 
+
+11:41:08 Build Finished (took 3s.91ms)
+
